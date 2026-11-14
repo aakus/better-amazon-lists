@@ -1,0 +1,89 @@
+{
+  "manifest_version": 3,
+  "name": "Better Amazon Lists",
+  "version": "0.1.0",
+  "description": "Compact, multi-column layout for Amazon wish lists: more items on screen, same details and controls.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "Better Amazon Lists",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.com/hz/wishlist/*",
+        "https://www.amazon.com/gp/registry/wishlist/*",
+        "https://www.amazon.com/registry/wishlist/*",
+        "https://www.amazon.co.uk/hz/wishlist/*",
+        "https://www.amazon.co.uk/gp/registry/wishlist/*",
+        "https://www.amazon.co.uk/registry/wishlist/*",
+        "https://www.amazon.de/hz/wishlist/*",
+        "https://www.amazon.de/gp/registry/wishlist/*",
+        "https://www.amazon.de/registry/wishlist/*",
+        "https://www.amazon.fr/hz/wishlist/*",
+        "https://www.amazon.fr/gp/registry/wishlist/*",
+        "https://www.amazon.fr/registry/wishlist/*",
+        "https://www.amazon.it/hz/wishlist/*",
+        "https://www.amazon.it/gp/registry/wishlist/*",
+        "https://www.amazon.it/registry/wishlist/*",
+        "https://www.amazon.es/hz/wishlist/*",
+        "https://www.amazon.es/gp/registry/wishlist/*",
+        "https://www.amazon.es/registry/wishlist/*",
+        "https://www.amazon.nl/hz/wishlist/*",
+        "https://www.amazon.nl/gp/registry/wishlist/*",
+        "https://www.amazon.nl/registry/wishlist/*",
+        "https://www.amazon.pl/hz/wishlist/*",
+        "https://www.amazon.pl/gp/registry/wishlist/*",
+        "https://www.amazon.pl/registry/wishlist/*",
+        "https://www.amazon.se/hz/wishlist/*",
+        "https://www.amazon.se/gp/registry/wishlist/*",
+        "https://www.amazon.se/registry/wishlist/*",
+        "https://www.amazon.ie/hz/wishlist/*",
+        "https://www.amazon.ie/gp/registry/wishlist/*",
+        "https://www.amazon.ie/registry/wishlist/*",
+        "https://www.amazon.com.be/hz/wishlist/*",
+        "https://www.amazon.com.be/gp/registry/wishlist/*",
+        "https://www.amazon.com.be/registry/wishlist/*",
+        "https://www.amazon.ca/hz/wishlist/*",
+        "https://www.amazon.ca/gp/registry/wishlist/*",
+        "https://www.amazon.ca/registry/wishlist/*",
+        "https://www.amazon.com.au/hz/wishlist/*",
+        "https://www.amazon.com.au/gp/registry/wishlist/*",
+        "https://www.amazon.com.au/registry/wishlist/*",
+        "https://www.amazon.co.jp/hz/wishlist/*",
+        "https://www.amazon.co.jp/gp/registry/wishlist/*",
+        "https://www.amazon.co.jp/registry/wishlist/*",
+        "https://www.amazon.in/hz/wishlist/*",
+        "https://www.amazon.in/gp/registry/wishlist/*",
+        "https://www.amazon.in/registry/wishlist/*",
+        "https://www.amazon.com.mx/hz/wishlist/*",
+        "https://www.amazon.com.mx/gp/registry/wishlist/*",
+        "https://www.amazon.com.mx/registry/wishlist/*",
+        "https://www.amazon.com.br/hz/wishlist/*",
+        "https://www.amazon.com.br/gp/registry/wishlist/*",
+        "https://www.amazon.com.br/registry/wishlist/*",
+        "https://www.amazon.com.tr/hz/wishlist/*",
+        "https://www.amazon.com.tr/gp/registry/wishlist/*",
+        "https://www.amazon.com.tr/registry/wishlist/*",
+        "https://www.amazon.ae/hz/wishlist/*",
+        "https://www.amazon.ae/gp/registry/wishlist/*",
+        "https://www.amazon.ae/registry/wishlist/*",
+        "https://www.amazon.sa/hz/wishlist/*",
+        "https://www.amazon.sa/gp/registry/wishlist/*",
+        "https://www.amazon.sa/registry/wishlist/*",
+        "https://www.amazon.sg/hz/wishlist/*",
+        "https://www.amazon.sg/gp/registry/wishlist/*",
+        "https://www.amazon.sg/registry/wishlist/*"
+      ],
+      "css": [
+        "compact.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

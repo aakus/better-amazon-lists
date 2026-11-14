@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Better Amazon Lists</title>
+<style>
+  body { font: 13px/1.4 system-ui, sans-serif; margin: 0; padding: 12px 14px; width: 250px; color: #111; }
+  h1 { font-size: 14px; margin: 0 0 10px; }
+  label.row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 8px 0; }
+  select, input[type="range"] { flex: 0 0 120px; width: 120px; }
+  .hint { color: #666; font-size: 11px; margin-top: 10px; }
+  output { font-variant-numeric: tabular-nums; color: #555; }
+</style>
+</head>
+<body>
+  <h1>Better Amazon Lists</h1>
+  <label class="row"><span>Compact layout</span><input type="checkbox" id="enabled"></label>
+  <label class="row"><span>Columns</span>
+    <select id="columns">
+      <option value="auto">Auto (fit width)</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+  </label>
+  <label class="row"><span>Picture size <output id="imageSizeOut"></output></span>
+    <input type="range" id="imageSize" min="60" max="220" step="10">
+  </label>
+  <label class="row"><span>Use full page width</span><input type="checkbox" id="fullWidth"></label>
+  <label class="row"><span>Shorten titles to 2 lines</span><input type="checkbox" id="clampTitles"></label>
+  <div class="hint">Changes apply immediately to open list pages.</div>
+  <script src="popup.js"></script>
+</body>
+</html>
