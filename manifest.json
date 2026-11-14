@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Better Amazon Lists",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Compact, multi-column layout for Amazon wish lists: more items on screen, same details and controls.",
   "permissions": [
     "storage"

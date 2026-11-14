@@ -15,6 +15,8 @@ Click the extension's toolbar icon:
 - Columns: auto (fit width) or 1–4
 - Picture size: 60–220px
 - Use full page width (removes Amazon's 1366px cap on the list page)
+- Open lists in Custom order, so drag-and-drop moves are still there after a reload
+  (Amazon saves moves in the Custom order but opens lists by "Most recently added")
 - Shorten titles to 2 lines
 
 ## Install

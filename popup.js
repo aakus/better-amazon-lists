@@ -1,4 +1,4 @@
-const DEFAULTS = { enabled: true, columns: 'auto', imageSize: 120, clampTitles: true, fullWidth: true };
+const DEFAULTS = { enabled: true, columns: 'auto', imageSize: 120, clampTitles: true, fullWidth: true, customOrder: true };
 const $ = (id) => document.getElementById(id);
 
 chrome.storage.sync.get(DEFAULTS, (s) => {
@@ -8,12 +8,14 @@ chrome.storage.sync.get(DEFAULTS, (s) => {
   $('imageSizeOut').textContent = `${s.imageSize}px`;
   $('clampTitles').checked = s.clampTitles;
   $('fullWidth').checked = s.fullWidth;
+  $('customOrder').checked = s.customOrder;
 });
 
 $('enabled').addEventListener('change', (e) => chrome.storage.sync.set({ enabled: e.target.checked }));
 $('columns').addEventListener('change', (e) => chrome.storage.sync.set({ columns: e.target.value }));
 $('clampTitles').addEventListener('change', (e) => chrome.storage.sync.set({ clampTitles: e.target.checked }));
 $('fullWidth').addEventListener('change', (e) => chrome.storage.sync.set({ fullWidth: e.target.checked }));
+$('customOrder').addEventListener('change', (e) => chrome.storage.sync.set({ customOrder: e.target.checked }));
 $('imageSize').addEventListener('input', (e) => {
   $('imageSizeOut').textContent = `${e.target.value}px`;
 });

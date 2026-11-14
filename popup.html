@@ -8,6 +8,7 @@
   h1 { font-size: 14px; margin: 0 0 10px; }
   label.row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 8px 0; }
   select, input[type="range"] { flex: 0 0 120px; width: 120px; }
+  small { color: #666; font-size: 11px; }
   .hint { color: #666; font-size: 11px; margin-top: 10px; }
   output { font-variant-numeric: tabular-nums; color: #555; }
 </style>
@@ -28,6 +29,7 @@
     <input type="range" id="imageSize" min="60" max="220" step="10">
   </label>
   <label class="row"><span>Use full page width</span><input type="checkbox" id="fullWidth"></label>
+  <label class="row"><span>Open lists in Custom order<br><small>keeps drag-and-drop moves after reload</small></span><input type="checkbox" id="customOrder"></label>
   <label class="row"><span>Shorten titles to 2 lines</span><input type="checkbox" id="clampTitles"></label>
   <div class="hint">Changes apply immediately to open list pages.</div>
   <script src="popup.js"></script>
